@@ -1,0 +1,13 @@
+
+<button class="btn" type="button" (click)="logout()">logout</button>
+<h1> Current User:{{username| uppercase}}</h1>
+<div *ngFor="let x of studata" class="box">
+    <p>Email:{{x.email | masking:x.flag}} </p>
+    <p>name:{{x.name | masking:x.flag}}</p>
+    <p>contact Number:{{x.phonenumber | masking:x.flag}}</p>
+    <p>Street:{{x.street | masking:x.flag}}</p>
+    <p>City:{{x.city | masking:x.flag}}</p>
+    <p>postal code:{{x.postalcode | masking:x.flag}}</p>
+   
+   
+</div>

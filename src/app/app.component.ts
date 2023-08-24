@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TestingPracttice';
+flag:boolean=true;
+  mask(){
+this.flag=!this.flag;
+  }
 }
